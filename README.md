@@ -26,5 +26,6 @@ Este proyecto es una aplicación web construida con Node.js, Express y Pug como 
 
 🏷️ Sección de descuentos
 
- En Desarrollo
+En Desarrollo!
+
 Este proyecto se está construyendo paso a paso, desde la instalación de Node.js hasta consultas avanzadas en base de datos y validación de formularios.
