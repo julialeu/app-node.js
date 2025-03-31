@@ -9,6 +9,8 @@ const port = process.env.PORT || 4000;
 //habilitar pug
 app.set('view engine', 'pug');
 
+app.use(express.static('public'));
+
 app.use('/', router);
 
 
