@@ -1,4 +1,6 @@
-🌍 Agencia de Viajes - Node.js + Express + MVC
+🌍 Agencia de Viajes
+
+Node.js + Express + MVC
 Este proyecto es una aplicación web construida con Node.js, Express y Pug como motor de plantillas. Implementa el patrón MVC (Modelo-Vista-Controlador), incluye conexión a una base de datos MySQL y permite manejar rutas, formularios, middlewares y contenido dinámico.
 
 🚀 Características
