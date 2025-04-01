@@ -9,6 +9,14 @@ const port = process.env.PORT || 4000;
 //habilitar pug
 app.set('view engine', 'pug');
 
+app.use((req, res, next) => {
+    console.log('respuesta recibida', res);
+    const year = new Date();
+    res.locals.actualYear = year.getFullYear();
+    console.log('nueva variable', res.locals);
+    return next();
+})
+
 app.use(express.static('public'));
 
 app.use('/', router);
