@@ -1,6 +1,30 @@
 extends ./layouts/index
 
 block content
-    p Nosotros
+    main.container.mt-5
+        .row
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="imagen sobre nosotros", class="img-fluid")
+            .col-md-7
+                h1 #{pagina}
+                blockquote  ipsum dolor sit amet, consectetur adipiscing elit. ex, porttitor id fringilla non, tincidunt non risus. Phasellus vel aliquet velit. Quisque in eleifend augue. Nulla non ipsum nec dui cursus accumsan et eget tellus. 
+                p sed lacinia augue. Cras nec pharetra odio, non semper arcu. Donec imperdiet sed lacus vulputate luctus. Fusce congue pharetra ante ut tristique. Suspendisse in quam non elit aliquet finibus eu vitae lacus. Pellentesque bibendum mollis mattis. Mauris imperdiet fringilla lobortis. Suspendisse vitae vestibulum velit.
+                p auctor, tortor eget elementum volutpat, massa nisl tincidunt arcu, in molestie purus odio ut nisl. Aenean hendrerit congue tempus. Quisque diam nunc, vehicula et nisl et, vulputate maximus libero. Quisque id euismod tortor.
 
-    img(src="img/cupon.jpg")
+    .listado-iconos
+        .container.mt-5.py-5-text-center
+            .row
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", alt="icon security", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad
+                    p Curabitur ac consectetur ipsum. In at sagittis diam. In malesuada vitae urna id consequat.
+
+                .col-md-4
+                    img(src="img/icono_destinos.svg", alt="icon destinos", class="img-fluid mb-4")
+                    h2.mb-4 Mejores destinos
+                    p Curabitur ac consectetur ipsum. In at sagittis diam. In malesuada vitae urna id consequat.
+
+                .col-md-4
+                    img(src="img/icono_precios.svg", alt="icon prices", class="img-fluid mb-4")
+                    h2.mb-4 Los mejores precios
+                    p Curabitur ac consectetur ipsum. In at sagittis diam. In malesuada vitae urna id consequat.                

@@ -13,6 +13,7 @@ app.use((req, res, next) => {
     console.log('respuesta recibida', res);
     const year = new Date();
     res.locals.actualYear = year.getFullYear();
+    res.locals.nombreSitio = 'Agencia de Viajes';
     console.log('nueva variable', res.locals);
     return next();
 })
