@@ -1,0 +1,23 @@
+extends ./layouts/index
+
+block content
+    main.container.mt-5
+        h1.text-center.mt-5 #{pagina}
+        .row
+
+          h2.d-block.w-100.text-center Agrega un testimonial
+          
+          .row.justify-content-center.col
+              .col-md-8
+                   form(action="" method="POST")
+                        .from-group
+                            label(for="nombre") Nombre
+                            input#nombre(type="text", placeholder="Tu nombre", name="nombre", class="form-control")
+                        .from-group
+                            label(for="email") Email
+                            input#email(type="text", placeholder="Tu email", name="email", class="form-control")
+                        .from-group
+                            label(for="mensaje") Mensaje
+                            textarea#mensaje(class="form-control", name="mansaje", placeholder="Tu mensaje", rows=3)
+
+                        input.btn.btn-success.btn-block(type="submit")           

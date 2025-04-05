@@ -1,24 +1,15 @@
 import express from "express";
+import { paginaInicio, paginaNosotros, paginaViajes, paginaTestimonios, paginaDetalleViaje } from "../controllers/paginasController.js";
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.render('home', {
-        pagina: 'Inicio'});
-});
+router.get('/', paginaInicio);
 
-router.get('/about-us', (req, res) => {
-    res.render('about-us', {
-        pagina: 'Nosotros'});
-});
+router.get('/nosotros', paginaNosotros);
 
-router.get('/travels', (req, res) => {    
-    res.render('travels', {
-        pagina: 'Viajes'});
-});
+router.get('/viajes', paginaViajes);
 
-router.get('/testimonials', (req, res) => {
-    res.render('testimonials', {
-        pagina: 'Testimonios'});
-});
+router.get('/viajes/:slug', paginaDetalleViaje);
+
+router.get('/testimonios', paginaTestimonios);
 
 export default router;
