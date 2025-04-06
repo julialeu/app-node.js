@@ -22,7 +22,7 @@ const paginaViajes = async (req, res) => {
 };
 
 const paginaTestimonios = (req, res) => {
-    res.render('testimonios', {
+    res.render('testimoniales', {
         pagina: 'Testimonios'});
 };
 
