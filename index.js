@@ -19,7 +19,6 @@ app.use((req, res, next) => {
     const year = new Date();
     res.locals.actualYear = year.getFullYear();
     res.locals.nombreSitio = 'Agencia de Viajes';
-    console.log('nueva variable', res.locals);
     return next();
 })
 
@@ -31,5 +30,5 @@ app.use('/', router);
 
 
 app.listen(port, () => {
-    console.log(`hola mundo puerto ${port}`);
+    console.log(`Port: ${port}`);
 });
