@@ -33,8 +33,6 @@ const paginaViajes = async (req, res) => {
 
     const viajes = await Viaje.findAll();
 
-    console.log('viajes --->', viajes);
-
     res.render('viajes', {
         pagina: 'Próximos Viajes',
         viajes

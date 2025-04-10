@@ -5,7 +5,7 @@ import db from "./config/db.js";
 const app = express();
 
 db.authenticate()
-    .then(() => console.log('Base de datos conectada'))
+    .then(() => console.log(''))
     .catch(error => console.log(error));
     
 const port = process.env.PORT || 4000;
@@ -15,7 +15,6 @@ const port = process.env.PORT || 4000;
 app.set('view engine', 'pug');
 
 app.use((req, res, next) => {
-    console.log('respuesta recibida', res);
     const year = new Date();
     res.locals.actualYear = year.getFullYear();
     res.locals.nombreSitio = 'Agencia de Viajes';
@@ -30,5 +29,5 @@ app.use('/', router);
 
 
 app.listen(port, () => {
-    console.log(`Port: ${port}`);
+    console.log('');
 });
